@@ -27,5 +27,7 @@ if mode == "e":
     for x in range(0, len(tochange)):
         y=x
         if x>len(key):
+            a=x//len(key)
+            y=x-(a*len(key))
             
         
