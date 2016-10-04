@@ -16,3 +16,5 @@ while not mode in ["e","d","q"]:
     mode = str(input("Enter e to encrypt, d to decrypt, or q to quit: "))
 if mode == "q":
     print("Goodbye!")
+if mode == "e":
+    
