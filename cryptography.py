@@ -28,7 +28,7 @@ if mode == "e":
         a=x//int(len(key))
         y=int(x-(a*len(key)))
         code= tochange[x]+key[y]
-        print(code, end="")
+        print(associations.find(code), end="")
     print()
             
         
