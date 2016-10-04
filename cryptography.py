@@ -45,4 +45,3 @@ while a!=1:
             code= int(tochange[x]-key[y])
             print(associations[code], end="")
         print()
-else:
