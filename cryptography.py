@@ -24,5 +24,8 @@ if mode == "e":
         tochange[x]=associations.find(tochange[x])
     for x in range(0, len(key)):
         key[x]=associations.find(key[x])
-    print(tochange)
+    for x in range(0, len(tochange)):
+        y=x
+        if x>len(key):
+            
         
