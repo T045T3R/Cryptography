@@ -29,7 +29,7 @@ if mode == "e":
         if x>len(key):
             a=x//int(len(key))
             y=int(x-(a*len(key)))
-        code=tochange[x]+key[y]
+        code= tochange[x]+key[y]
         print(code, end=" ")
     print()
             
