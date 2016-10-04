@@ -19,8 +19,9 @@ if mode == "q":
     print("Goodbye!")
 if mode == "e":
     tochange = list(input("Message: "))
-    key = input("Key: ")
+    key = list(input("Key: "))
     for x in range(0, len(tochange)):
         tochange[x]=associations.find(tochange[x])
-    print(tochange)
+    for x in range(0, len(key)):
+        key[x]=associations.find(key[x])
         
