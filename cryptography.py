@@ -30,10 +30,6 @@ if mode == "e":
         code= int(tochange[x]+key[y])
         print(associations[code], end="")
     print()
-mode = str(input("Enter e to encrypt, d to decrypt, or q to quit: "))
-while not mode in ["e","d","q"]:
-    print("Did not understand command, try again.")
-    mode = str(input("Enter e to encrypt, d to decrypt, or q to quit: "))
 if mode == "d":
     tochange = list(input("Message: "))
     key = list(input("Key: "))
