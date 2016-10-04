@@ -19,4 +19,5 @@ if mode == "q":
     print("Goodbye!")
 if mode == "e":
     tochange = input("Message: ")
-    key = input(
+    key = input("Key: ")
+    
