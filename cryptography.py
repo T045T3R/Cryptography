@@ -25,10 +25,8 @@ if mode == "e":
     for x in range(0, len(key)):
         key[x]=associations.find(key[x])
     for x in range(0, len(tochange)):
-        y=x
-        if x>len(key):
-            a=x//int(len(key))
-            y=int(x-(a*len(key)))
+        a=x//int(len(key))
+        y=int(x-(a*len(key)))
         code= tochange[x]+key[y]
         print(code, end=" ")
     print()
