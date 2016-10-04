@@ -20,4 +20,5 @@ if mode == "q":
 if mode == "e":
     tochange = input("Message: ")
     key = input("Key: ")
-    
+    a=associations.find(char)
+    print(a)
