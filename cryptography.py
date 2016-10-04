@@ -22,4 +22,5 @@ if mode == "e":
     key = input("Key: ")
     for x in range(0, len(tochange)):
         tochange[x]=associations.find(tochange[x])
+    print(tochange)
         
