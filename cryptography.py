@@ -18,7 +18,8 @@ while not mode in ["e","d","q"]:
 if mode == "q":
     print("Goodbye!")
 if mode == "e":
-    tochange = input("Message: ")
+    tochange = list(input("Message: "))
     key = input("Key: ")
-    a=associations.find(char)
-    print(a)
+    for x in range(0, len(tochange)):
+        tochange[x]=associations.find(tochange[x])
+        
