@@ -29,5 +29,6 @@ if mode == "e":
         if x>len(key):
             a=x//len(key)
             y=x-(a*len(key))
+        code=tochange[x]+key[y]
             
         
