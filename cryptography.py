@@ -14,5 +14,5 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 mode = str(input("Enter e to encrypt, d to decrypt, or q to quit: "))
 while not mode in ["e","d","q"]:
     mode = str(input("Enter e to encrypt, d to decrypt, or q to quit: "))
-if mode = "q":
+if mode == "q":
     print("Goodbye!")
