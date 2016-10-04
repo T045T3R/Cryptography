@@ -32,7 +32,6 @@ while a!=1:
                 code= int(tochange[x]+key[y])
                 print(associations[code], end="")
         print()
-        a=1
     if mode == "d":
         tochange = list(input("Message: "))
         key = list(input("Key: "))
@@ -46,4 +45,3 @@ while a!=1:
             code= int(tochange[x]-key[y])
             print(associations[code], end="")
         print()
-        a=1
