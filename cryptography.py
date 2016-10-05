@@ -31,7 +31,7 @@ while a!=1:
         for x in range(0, len(tochange)):
                 a=x//int(len(key))
                 y=int(x-(a*len(key)))
-                code= int(tochange[x]+key[y])-(((int(tochange[x]+key[y]))//87)*87)
+                code= int(tochange[x]+key[y])
                 print(associations1[code], end="")
         print()
     if mode == "d":
@@ -44,6 +44,6 @@ while a!=1:
         for x in range(0, len(tochange)):
             a=x//int(len(key))
             y=int(x-(a*len(key)))
-            code= int(tochange[x]-key[y])-((int(tochange[x]+key[y])//87)*87)
+            code= int(tochange[x]-key[y])
             print(associations1[code], end="")
         print()
