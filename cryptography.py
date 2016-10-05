@@ -37,7 +37,7 @@ while a!=1:
         tochange = list(input("Message: "))
         key = list(input("Key: "))
         for x in range(0, len(tochange)):
-            tochange[x]=associations.find(tochange[x])-(associations.find(tochange[x])//87)
+            tochange[x]=associations.find(tochange[x])-(associations.find(tochange[x])//87)*87
         for x in range(0, len(key)):
             key[x]=associations.find(key[x])-(associations.find(key[x])//87)
         for x in range(0, len(tochange)):
