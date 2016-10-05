@@ -45,7 +45,7 @@ while a!=1:
             a=x//int(len(key))
             b=y//int(len(tochange)
             y=int(x-(a*len(key)))
-            x=int(x-(a*len(tochange)
+            x=int(x-(a*len(tochange))
             code= int(tochange[x]-key[y])
             print(associations[code], end="")
         print()
