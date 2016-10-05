@@ -23,14 +23,14 @@ while a!=1:
         tochange = list(input("Message: "))
         key = list(input("Key: "))
         for x in range(0, len(tochange)):
-            tochange[x]=associations.find(tochange[x])-((associations.find(tochange[x])//87)*87)
+            tochange[x]=associations.find(tochange[x])
             
         for x in range(0, len(key)):
             key[x]=associations.find(key[x])
         for x in range(0, len(tochange)):
                 a=x//int(len(key))
                 y=int(x-(a*len(key)))
-                code= int(tochange[x]+key[y])
+                code= int(tochange[x]+key[y])-((associations.find(tochange[x]+key[y])//87)*87)
                 print(associations[code], end="")
         print()
     if mode == "d":
@@ -43,6 +43,6 @@ while a!=1:
         for x in range(0, len(tochange)):
             a=x//int(len(key))
             y=int(x-(a*len(key)))
-            code= int(tochange[x]-key[y])
+            code= int(tochange[x]-key[y])-((associations.find(tochange[x]+key[y])//87)*87)
             print(associations[code], end="")
         print()
