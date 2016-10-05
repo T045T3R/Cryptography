@@ -28,9 +28,7 @@ while a!=1:
             key[x]=associations.find(key[x])
         for x in range(0, len(tochange)):
                 a=x//int(len(key))
-                b=x//int(len(tochange))
                 y=int(x-(a*len(key)))
-                z=int(y-(a*len(tochange)))
                 code= int(tochange[z]+key[y])
                 print(associations[code], end="")
         print()
@@ -43,9 +41,7 @@ while a!=1:
             key[x]=associations.find(key[x])
         for x in range(0, len(tochange)):
             a=x//int(len(key))
-            b=x//int(len(tochange))
             y=int(x-(a*len(key)))
-            z=int(y-(a*len(tochange)))
             code= int(tochange[z]-key[y])
             print(associations[code], end="")
         print()
