@@ -10,6 +10,7 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+associations1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 a=0
 while a!=1:
     mode = str(input("Enter e to encrypt, d to decrypt, or q to quit: "))
@@ -31,7 +32,7 @@ while a!=1:
                 a=x//int(len(key))
                 y=int(x-(a*len(key)))
                 code= int(tochange[x]+key[y])-(((int(tochange[x]+key[y]))//87)*87)
-                print(associations[code], end="")
+                print(associations1[code], end="")
         print()
     if mode == "d":
         tochange = list(input("Message: "))
@@ -44,5 +45,5 @@ while a!=1:
             a=x//int(len(key))
             y=int(x-(a*len(key)))
             code= int(tochange[x]-key[y])-((int(tochange[x]+key[y])//87)*87)
-            print(associations[code], end="")
+            print(associations1[code], end="")
         print()
